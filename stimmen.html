@@ -16,6 +16,9 @@
 *{box-sizing:border-box}
 body{margin:0;background:#14183a}
 a{color:#c9a84c}a:hover{color:#d8bd6e}
+summary::-webkit-details-marker{display:none}
+.lz-menu[open] .lz-burger{display:none !important}.lz-menu[open] .lz-x{display:block !important}
+@media (max-width: 600px){.lz-nav,.lz-cta{display:none !important}.lz-menu{display:block !important;margin-left:auto}header > div{flex-wrap:nowrap !important}}
 @media (max-width: 920px){.lz-cta{order:2;margin-left:auto}.lz-nav{order:3;flex-basis:100%;margin-left:0 !important}}
 @media (max-width: 600px){.lz-cta{order:4 !important}header > div{row-gap:8px !important}}
 @media (max-width: 480px){header > div{column-gap:12px !important}header img{width:40px !important;height:40px !important}header a > span > span:first-child{font-size:22px !important}}
@@ -38,6 +41,16 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 <a href="index.html" style="color: #cfc8bb; text-decoration: none">← Zur Startseite</a>
 </nav>
 <a class="lz-cta" href="index.html" style="color: #14183a; background: #c9a84c; text-decoration: none; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 500; letter-spacing: 1px; line-height: 1.4">Schreib mir</a>
+<details class="lz-menu" style="display: none">
+<summary aria-label="Menü öffnen" style="list-style: none; cursor: pointer; width: 44px; height: 44px; border: 1px solid rgba(201,168,76,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center">
+<svg class="lz-burger" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" fill="none"></path></svg>
+<svg class="lz-x" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" style="display: none"><path d="M6 6l12 12M18 6L6 18" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" fill="none"></path></svg>
+</summary>
+<nav aria-label="Menü" style="position: absolute; left: 0; right: 0; top: 100%; background: #14183a; border-bottom: 1px solid rgba(201,168,76,0.35); box-shadow: 0 16px 30px rgba(10,12,32,0.5); padding: 4px 24px 28px; display: flex; flex-direction: column">
+<a href="index.html" style="display: block; padding: 14px 0; border-bottom: 1px solid rgba(201,168,76,0.2); color: #f7f2eb; text-decoration: none; font-size: 17px; letter-spacing: 1px">Zur Startseite</a>
+<a href="index.html" style="align-self: flex-start; margin-top: 20px; color: #14183a; background: #c9a84c; text-decoration: none; padding: 10px 22px; border-radius: 999px; font-size: 15px; font-weight: 500; letter-spacing: 1px">Schreib mir</a>
+</nav>
+</details>
 </div>
 </header>
 
@@ -131,5 +144,6 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 </footer>
 
 </div>
+<script>document.querySelectorAll('.lz-menu a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open')})});</script>
 </body>
 </html>
