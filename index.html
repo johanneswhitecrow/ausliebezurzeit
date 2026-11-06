@@ -22,6 +22,8 @@ section{scroll-margin-top:96px}
 .lz-marquee:hover .lz-track,.lz-marquee:focus-within .lz-track{animation-play-state:paused}
 @media (prefers-reduced-motion: reduce){.lz-track{animation:none}.lz-marquee{overflow-x:auto}}
 a{color:#c9a84c}a:hover{color:#d8bd6e}
+@media (max-width: 920px){.lz-cta{order:2;margin-left:auto}.lz-nav{order:3;flex-basis:100%;margin-left:0 !important}}
+@media (max-width: 480px){header > div{column-gap:12px !important}header img{width:40px !important;height:40px !important}header a > span > span:first-child{font-size:22px !important}}
 @media (max-width: 600px){.lz-card{padding:24px 18px !important;aspect-ratio:auto !important;min-height:min(86vw,340px)}}
 @media (max-width: 900px), (hover: none){.lz-track{animation:none !important;padding:0 24px !important}.lz-marquee{overflow-x:auto !important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}.lz-marquee::-webkit-scrollbar{display:none}.lz-card{scroll-snap-align:center}.lz-card[aria-hidden="true"]{display:none !important}.lz-hint{display:block !important}}
 </style>
@@ -31,7 +33,7 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 
 <!-- ============ HEADER ============ -->
 <header style="position: sticky; top: 0; z-index: 50; background: #14183a; border-bottom: 1px solid rgba(201,168,76,0.35); box-shadow: 0 6px 20px rgba(10,12,32,0.35)">
-<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 16px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
 <a href="#top" style="text-decoration: none; display: flex; align-items: center; gap: 14px">
 <img src="logo-klein.png" alt="" style="width: 52px; height: 52px; border-radius: 50%; display: block; flex: 0 0 auto">
 <span style="display: flex; flex-direction: column; gap: 2px">
@@ -39,13 +41,13 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 <span style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #c9a84c">Johannes Schnaidt</span>
 </span>
 </a>
-<nav aria-label="Hauptnavigation" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: 14px; letter-spacing: 1px">
+<nav class="lz-nav" aria-label="Hauptnavigation" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: 14px; letter-spacing: 1px; margin-left: auto">
 <a href="#weg" style="color: #cfc8bb; text-decoration: none">Kurse</a>
 <a href="#reading" style="color: #cfc8bb; text-decoration: none">Maya Reading</a>
 <a href="#stimmen" style="color: #cfc8bb; text-decoration: none">Stimmen</a>
 <a href="#aktuelles" style="color: #cfc8bb; text-decoration: none">Aktuelles</a>
-<a href="#kontakt" style="color: #14183a; background: #c9a84c; text-decoration: none; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 500; letter-spacing: 1px; line-height: 1.4">Schreib mir</a>
 </nav>
+<a class="lz-cta" href="#kontakt" style="color: #14183a; background: #c9a84c; text-decoration: none; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 500; letter-spacing: 1px; line-height: 1.4">Schreib mir</a>
 </div>
 </header>
 
