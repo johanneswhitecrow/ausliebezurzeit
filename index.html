@@ -22,6 +22,7 @@ section{scroll-margin-top:96px}
 .lz-marquee:hover .lz-track,.lz-marquee:focus-within .lz-track{animation-play-state:paused}
 @media (prefers-reduced-motion: reduce){.lz-track{animation:none}.lz-marquee{overflow-x:auto}}
 a{color:#c9a84c}a:hover{color:#d8bd6e}
+@media (max-width: 600px){.lz-bonus{padding:22px 20px 20px !important;text-align:center}.lz-medaille{position:static !important;transform:none !important;margin:0 auto 12px}}
 @media (max-width: 920px){.lz-cta{order:2;margin-left:auto}.lz-nav{order:3;flex-basis:100%;margin-left:0 !important}}
 @media (max-width: 600px){.lz-cta{order:4 !important}header > div{row-gap:8px !important}}
 @media (max-width: 480px){header > div{column-gap:12px !important}header img{width:40px !important;height:40px !important}header a > span > span:first-child{font-size:22px !important}}
@@ -194,7 +195,14 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 <div><dt style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #c9a84c">Voraussetzung</dt><dd style="margin: 4px 0 0; font-size: 15px; line-height: 1.5">Grundkurs (Stufe 1)</dd></div>
 <div><dt style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #c9a84c">Energieausgleich</dt><dd style="margin: 4px 0 0; font-size: 15px; line-height: 1.5">555 € · Raten nach Absprache</dd></div>
 </dl>
-<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #cfc8bb">Bonus: Zugang zu den Audioimpulsen der Grundkurswellen und jederzeit Teilnahme an den Grundkurs-Zooms. Alle Zooms werden aufgezeichnet.</p>
+<div class="lz-bonus" style="position: relative; background: #c9a84c; color: #14183a; border-radius: 8px; padding: 18px 20px 18px 86px; outline: 1px solid #14183a; outline-offset: -6px; box-shadow: 0 8px 24px rgba(0,0,0,0.35)">
+<div class="lz-medaille" aria-hidden="true" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 50%; background: #14183a; border: 2px solid #f7f2eb; display: flex; align-items: center; justify-content: center">
+<svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2.5 L14.6 9.1 L21.5 9.4 L16.1 13.7 L18 20.5 L12 16.6 L6 20.5 L7.9 13.7 L2.5 9.4 L9.4 9.1 Z" fill="#c9a84c"></path></svg>
+</div>
+<p style="margin: 0 0 4px; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600">Bonus · Dein VIP‑Ticket</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; font-weight: 500">Zugang zu den ausführlichen Audioimpulsen aller Grundkurswellen – und du kannst jederzeit an den Grundkurs-Zooms teilnehmen.</p>
+</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #cfc8bb">Alle Zooms werden aufgezeichnet.</p>
 <a href="#kontakt" style="align-self: flex-start; border: 1px solid #c9a84c; color: #f7f2eb; text-decoration: none; padding: 5px 13px; border-radius: 999px; font-size: 13px; letter-spacing: 1px; line-height: 1.4">Mehr erfahren</a>
 </article>
 </div>
@@ -414,8 +422,9 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 <article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 24px 0; border-top: 1px solid #d8bd6e">
 <time datetime="2026-11-01" style="flex: 0 0 140px; font-size: 14px; letter-spacing: 1px; color: #7a5f1c">01.11.2026</time>
 <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #14183a">Die Pioniere des 13-Monde-Kurses sind gestartet</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #33333a">Mit dem Magnetischen Mond hat die erste Gruppe ihre Reise durch das Jahr begonnen. Der nächste Einstieg ist in drei Monaten möglich.</p>
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #14183a">Die Pioniere des 13-Monde-Kurses sind aufgebrochen</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #33333a">Unser Kurs ist in seinen Magnetischen Mond gestartet: Am 1. November haben wir uns zum ersten Mal versammelt – eine kleine Runde aus vertrauten und neuen Gesichtern, voller Neugier und Vorfreude. Wir haben gemeinsam die Landkarte des Jahres aufgeschlagen, Fragen geteilt und Wünsche gesammelt, welche Themen uns durch die dreizehn Monde begleiten sollen. Es war einer dieser Abende, an denen man spürt: Hier wächst etwas, das trägt.</p>
+<p style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.5; color: #14183a">Der nächste Einstieg ist in drei Monaten möglich – vielleicht bist du dann mit an Bord.</p>
 </div>
 </article>
 <article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 24px 0; border-top: 1px solid #d8bd6e; border-bottom: 1px solid #d8bd6e">
