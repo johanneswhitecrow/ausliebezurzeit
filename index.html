@@ -23,6 +23,7 @@ section{scroll-margin-top:96px}
 @media (prefers-reduced-motion: reduce){.lz-track{animation:none}.lz-marquee{overflow-x:auto}}
 a{color:#c9a84c}a:hover{color:#d8bd6e}
 @media (max-width: 600px){.lz-card{padding:24px 18px !important;aspect-ratio:auto !important;min-height:min(86vw,340px)}}
+@media (max-width: 900px), (hover: none){.lz-track{animation:none !important;padding:0 24px !important}.lz-marquee{overflow-x:auto !important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}.lz-marquee::-webkit-scrollbar{display:none}.lz-card{scroll-snap-align:center}.lz-card[aria-hidden="true"]{display:none !important}.lz-hint{display:block !important}}
 </style>
 </head>
 <body>
@@ -353,6 +354,7 @@ a{color:#c9a84c}a:hover{color:#d8bd6e}
 </figure>
 </div>
 </div>
+<p class="lz-hint" style="display: none; margin: -20px 0 0; text-align: center; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #cfc8bb">← Wischen für weitere Stimmen →</p>
 <div style="display: flex; justify-content: center">
 <a href="stimmen.html" style="border: 1px solid #c9a84c; color: #f7f2eb; text-decoration: none; padding: 15px 30px; border-radius: 999px; font-size: 16px; letter-spacing: 0.5px">Alle Rezensionen anzeigen</a>
 </div>
